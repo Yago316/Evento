@@ -13,10 +13,10 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.example.evento.evento.DTO.AtividadeDTO;
 import com.example.evento.evento.Service.EventoService;
-import com.example.evento.evento.entities.Atividade;
+import com.example.evento.evento.entities.Participante;
 
 @RestController
-@RequestMapping(value = "/evento")
+@RequestMapping("/evento")
 public class EventoController {
 	
 	@Autowired
@@ -28,10 +28,10 @@ public class EventoController {
 	
 	}
 	
-	@PostMapping
-    public ResponseEntity<Atividade> criarAtividade(@RequestBody Atividade novaAtividade) {
-        Atividade atividadeSalva = service.save(novaAtividade);
-        return new ResponseEntity<>(atividadeSalva, HttpStatus.CREATED);
+	@PostMapping("/cadastrar")
+    public ResponseEntity<Participante> cadastarUsuario(@RequestBody Participante novoParticpante) {
+        Participante participateSalva = service.save(novoParticpante);
+        return new ResponseEntity<>(participateSalva, HttpStatus.CREATED);
 }
 }
 

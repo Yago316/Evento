@@ -8,6 +8,7 @@ import org.springframework.stereotype.Service;
 import com.example.evento.evento.DTO.AtividadeDTO;
 import com.example.evento.evento.Repository.AtividadeRepository;
 import com.example.evento.evento.entities.Atividade;
+import com.example.evento.evento.entities.Participante;
 
 @Service
 public class EventoService {
@@ -19,7 +20,7 @@ public class EventoService {
 		return list.stream().map(x -> new AtividadeDTO(x)).toList();
 	}
 
-	public Atividade save(Atividade novaAtividade) {
+	public Participante save(Participante novoParticpante) {
 
 		return null;
 	}
