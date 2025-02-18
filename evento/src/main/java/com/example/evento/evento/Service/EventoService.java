@@ -18,4 +18,9 @@ public class EventoService {
 		List<Atividade> list = repo.findAll();
 		return list.stream().map(x -> new AtividadeDTO(x)).toList();
 	}
+
+	public Atividade save(Atividade novaAtividade) {
+
+		return null;
+	}
 }
