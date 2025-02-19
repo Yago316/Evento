@@ -55,5 +55,15 @@ public class Participante {
 	public void setEmail(String email) {
 		this.email = email;
 	}
+
+	public static List<Participante> findAll() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public static Participante save(Participante participante) {
+		// TODO Auto-generated method stub
+		return null;
+	}
 	
 }

@@ -5,6 +5,6 @@ import org.springframework.stereotype.Repository;
 
 import com.example.evento.evento.entities.Atividade;
 @Repository
-public interface AtividadeRepository extends JpaRepository<Atividade, Long> {
+public interface AtividadeRepository extends JpaRepository<Atividade, Integer> {
 
 }

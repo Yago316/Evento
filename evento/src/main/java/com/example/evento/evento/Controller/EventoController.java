@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.example.evento.evento.DTO.AtividadeDTO;
+import com.example.evento.evento.DTO.ParticipanteDTO;
 import com.example.evento.evento.Service.EventoService;
 import com.example.evento.evento.entities.Participante;
 
@@ -23,7 +23,7 @@ public class EventoController {
 	EventoService service;
 
 	@GetMapping
-	public ResponseEntity<List<AtividadeDTO>> buscar(){
+	public ResponseEntity<List<ParticipanteDTO>> buscarTodos(){
 		return ResponseEntity.ok(service.buscarTodos());
 	
 	}

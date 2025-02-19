@@ -5,6 +5,6 @@ import org.springframework.stereotype.Repository;
 
 import com.example.evento.evento.entities.Bloco;
 @Repository
-public interface BlocoRepository extends JpaRepository<Bloco, Long> {
+public interface BlocoRepository extends JpaRepository<Bloco, Integer> {
 
 }
